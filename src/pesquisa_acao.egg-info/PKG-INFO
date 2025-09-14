@@ -1,0 +1,50 @@
+Metadata-Version: 2.4
+Name: pesquisa-acao
+Version: 0.1.0
+Summary: Pipelines qualitativo e diário para pesquisa de ações (header, notícias/Reddit/relatórios, KPIs SEC).
+Author: Projeto Hydra
+Project-URL: Homepage, https://github.com/Maumau-3005/Hydra-fullstack
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Provides-Extra: qual
+Requires-Dist: google-genai>=1.0.0; extra == "qual"
+Requires-Dist: praw>=7.7.0; extra == "qual"
+Requires-Dist: feedparser>=6.0.8; extra == "qual"
+Requires-Dist: trafilatura>=1.8.0; extra == "qual"
+Requires-Dist: httpx>=0.24.0; extra == "qual"
+Requires-Dist: pydantic>=2.0.0; extra == "qual"
+Requires-Dist: tenacity>=8.2.0; extra == "qual"
+Requires-Dist: requests-cache>=1.1.0; extra == "qual"
+Requires-Dist: url-normalize>=1.4.3; extra == "qual"
+Requires-Dist: pymupdf>=1.21.0; extra == "qual"
+Requires-Dist: pdfplumber>=0.10.0; extra == "qual"
+Requires-Dist: yfinance>=0.2.0; extra == "qual"
+Provides-Extra: daily
+Requires-Dist: pandas>=2.0.0; extra == "daily"
+Requires-Dist: numpy>=1.26.0; extra == "daily"
+Requires-Dist: yfinance>=0.2.0; extra == "daily"
+Requires-Dist: requests>=2.28.0; extra == "daily"
+Provides-Extra: api
+Requires-Dist: fastapi>=0.110.0; extra == "api"
+Requires-Dist: uvicorn>=0.23.0; extra == "api"
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0.0; extra == "dev"
+Requires-Dist: pre-commit>=3.7.0; extra == "dev"
+Provides-Extra: all
+Requires-Dist: google-genai>=1.0.0; extra == "all"
+Requires-Dist: praw>=7.7.0; extra == "all"
+Requires-Dist: feedparser>=6.0.8; extra == "all"
+Requires-Dist: trafilatura>=1.8.0; extra == "all"
+Requires-Dist: httpx>=0.24.0; extra == "all"
+Requires-Dist: pydantic>=2.0.0; extra == "all"
+Requires-Dist: tenacity>=8.2.0; extra == "all"
+Requires-Dist: requests-cache>=1.1.0; extra == "all"
+Requires-Dist: url-normalize>=1.4.3; extra == "all"
+Requires-Dist: pymupdf>=1.21.0; extra == "all"
+Requires-Dist: pdfplumber>=0.10.0; extra == "all"
+Requires-Dist: yfinance>=0.2.0; extra == "all"
+Requires-Dist: pandas>=2.0.0; extra == "all"
+Requires-Dist: numpy>=1.26.0; extra == "all"
+Requires-Dist: requests>=2.28.0; extra == "all"
+Requires-Dist: fastapi>=0.110.0; extra == "all"
+Requires-Dist: uvicorn>=0.23.0; extra == "all"

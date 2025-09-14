@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pesquisa-acao"
+version = "0.1.0"
+description = "Pipelines qualitativo e diário para pesquisa de ações (header, notícias/Reddit/relatórios, KPIs SEC)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "Projeto Hydra" }]
+dependencies = []
+
+[project.optional-dependencies]
+qual = [
+  "google-genai>=1.0.0",
+  "praw>=7.7.0",
+  "feedparser>=6.0.8",
+  "trafilatura>=1.8.0",
+  "httpx>=0.24.0",
+  "pydantic>=2.0.0",
+  "tenacity>=8.2.0",
+  "requests-cache>=1.1.0",
+  "url-normalize>=1.4.3",
+  "pymupdf>=1.21.0",
+  "pdfplumber>=0.10.0",
+  "yfinance>=0.2.0",
+]
+daily = [
+  "pandas>=2.0.0",
+  "numpy>=1.26.0",
+  "yfinance>=0.2.0",
+  "requests>=2.28.0",
+]
+api = [
+  "fastapi>=0.110.0",
+  "uvicorn>=0.23.0",
+]
+dev = [
+  "pytest>=8.0.0",
+  "pre-commit>=3.7.0",
+]
+all = [
+  "google-genai>=1.0.0",
+  "praw>=7.7.0",
+  "feedparser>=6.0.8",
+  "trafilatura>=1.8.0",
+  "httpx>=0.24.0",
+  "pydantic>=2.0.0",
+  "tenacity>=8.2.0",
+  "requests-cache>=1.1.0",
+  "url-normalize>=1.4.3",
+  "pymupdf>=1.21.0",
+  "pdfplumber>=0.10.0",
+  "yfinance>=0.2.0",
+  "pandas>=2.0.0",
+  "numpy>=1.26.0",
+  "requests>=2.28.0",
+  "fastapi>=0.110.0",
+  "uvicorn>=0.23.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Maumau-3005/Hydra-fullstack"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pesquisa_acao*"]
+
